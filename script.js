@@ -1,4 +1,3 @@
-const socket = io();
 const app = document.getElementById('app');
 
 function renderLogin() {
