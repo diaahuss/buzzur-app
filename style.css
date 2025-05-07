@@ -1,17 +1,60 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+#app {
+  width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+  background-color: #add8e6;
+  color: white;
+  padding: 15px;
   text-align: center;
-  margin-top: 40px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-input, button {
-  margin: 5px;
+input[type="text"],
+input[type="password"] {
+  width: calc(100% - 40px);
   padding: 10px;
-  width: 80%;
+  margin: 5px 0;
 }
 
-.group {
-  margin: 10px 0;
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  background-color: #87cefa;
+  color: white;
+  border: none;
   padding: 10px;
-  border: 1px solid #ccc;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00bfff;
 }
